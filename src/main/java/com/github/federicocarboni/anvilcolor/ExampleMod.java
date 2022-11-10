@@ -1,4 +1,4 @@
-package net.fabricmc.example;
+package com.github.federicocarboni.anvilcolor;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
