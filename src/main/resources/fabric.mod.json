@@ -1,38 +1,34 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "colore",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Colore",
+  "description": "Customize your items with colorful names and lore text",
   "authors": [
-    "Me!"
+    "Federico Carboni"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/FedericoCarboni/colore",
+    "issues": "https://github.com/FedericoCarboni/colore/issues",
+    "sources": "https://github.com/FedericoCarboni/colore"
+  },
+  "accessWidener": "colore.accesswidener",
+  "entrypoints": {
+    "main": ["colore.ColoreMod"]
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPL-3.0",
+  "icon": "assets/colore/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.github.federicocarboni.anvilcolor.ExampleMod"
-    ]
-  },
   "mixins": [
-    "modid.mixins.json"
+    "colore.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.9",
-    "fabric-api": "*",
-    "minecraft": "~1.19",
+    "minecraft": "1.19.*",
+    "fabricloader": ">=0.14.6",
     "java": ">=17"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
