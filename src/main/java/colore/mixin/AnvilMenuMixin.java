@@ -78,7 +78,11 @@ public abstract class AnvilMenuMixin extends ItemCombinerMenu {
                     }
                     // Just like renaming, adding lore text doesn't increase repair cost, but it still uses the base
                     // repair cost of the input item
-                    cost.set(inputStack.getBaseRepairCost() + 1);
+                    int repairCost = inputStack.getBaseRepairCost() + 1;
+                    if (repairCost >= 40) {
+                        repairCost = 39;
+                    }
+                    cost.set(repairCost);
                     resultSlots.setItem(0, resultStack);
                 }
             }
